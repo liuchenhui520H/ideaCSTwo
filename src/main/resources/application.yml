@@ -1,0 +1,9 @@
+spring:
+  resources:
+    static-locations: classpath:templates/,classpath:static/
+  mvc:
+    view:
+      prefix: static/
+      suffix: .html
+    static-path-pattern: /static/**
+# 静态文件实例<img src="/static/pic/pig.jpg" height="1920" width="1080"/>
