@@ -8,6 +8,9 @@ import org.springframework.context.annotation.PropertySource;
 @ConfigurationProperties(prefix = "com.imooc.opensource")
 @PropertySource(value = "classpath:resource.properties")
 public class Resource {
+
+
+
     public String getName() {
         return name;
     }
@@ -36,4 +39,9 @@ public class Resource {
     private  String website;
     private  String language;
 
+    public Resource(String name, String website, String language) {
+        this.name = name;
+        this.website = website;
+        this.language = language;
+    }
 }
