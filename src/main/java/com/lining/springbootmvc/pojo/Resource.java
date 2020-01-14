@@ -39,9 +39,5 @@ public class Resource {
     private  String website;
     private  String language;
 
-    public Resource(String name, String website, String language) {
-        this.name = name;
-        this.website = website;
-        this.language = language;
-    }
+
 }
