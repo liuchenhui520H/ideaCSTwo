@@ -70,6 +70,7 @@ public class UserController {
     public LeeJSONResult getResource(){
         Resource bean=new Resource();
         BeanUtils.copyProperties(resource,bean);
+        System.out.println("dddddddd");
         return new LeeJSONResult(bean);
     }
 
